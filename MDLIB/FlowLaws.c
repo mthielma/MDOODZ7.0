@@ -54,7 +54,7 @@ void ReadDataPowerLaw( mat_prop* mat, params* model, int k, int number, scale* s
             
         /****************** SPECIAL CASE: user-defined power law flow law ******************/
         case 1 :
-            printf("'Homemade' power law flow of the form: eta = eta0 * exp(-Q/n/R/T) * Eii^(1/n - 1):\n" );
+            printf("'Homemade' power law flow of the form: eta = eta0 * exp(Q/n/R/T) * Eii^(1/n - 1):\n" );
             mat->tpwl[k] = 0.0;
             mat->npwl[k] = mat->npwl[k];
             mat->mpwl[k] = 0.0;
